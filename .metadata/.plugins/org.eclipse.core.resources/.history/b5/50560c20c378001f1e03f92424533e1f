@@ -1,0 +1,31 @@
+package Contador;
+
+public class Contador implements Runnable {
+	/**
+	 * Crea una clase llamada Contador que contenga un atributo que sea un contador
+	 * otro que sea el nombre del hilo y otro que sea el límite del contador, es
+	 * decir, dónde acabar.
+	 * 
+	 * Crea varios contadores y ejecútalos.
+	 */
+
+	private int contador;
+	private String nombreHilo;
+	private int limiteContador;
+
+	public Contador(int contador, String nombreHilo, int limiteContador) {
+		this.contador = contador;
+		this.nombreHilo = nombreHilo;
+		this.limiteContador = limiteContador;
+	}
+
+	@Override
+	public void run() {
+		for (int i = 0; i < limiteContador; i += contador) {
+			System.out.println(i + nombreHilo);
+			;
+
+		}
+	}
+
+}

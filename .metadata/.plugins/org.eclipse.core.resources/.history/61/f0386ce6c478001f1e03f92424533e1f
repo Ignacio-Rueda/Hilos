@@ -1,0 +1,19 @@
+package Contador;
+
+public class Main {
+	
+	
+	public static void main(String args[]) {
+		
+		Contador hilo1 = new Contador("1",30);
+		Contador hilo2 = new Contador("2",30);
+		
+		
+		Thread t1 = new Thread(hilo1);
+		Thread t2 = new Thread(hilo2);
+		
+		
+		t1.start();
+		t2.start();
+	}
+}

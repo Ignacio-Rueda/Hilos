@@ -1,2 +1,8 @@
-module Programacion_concurrente {
+/**
+ * 
+ */
+/**
+ * 
+ */
+module Hilos_pildoras_informaticas {
 }
